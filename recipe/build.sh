@@ -25,6 +25,7 @@ fi
             --with-python="${PYTHON}" \
             --with-libiconv=gnu \
             --disable-libmount \
+            --with-gio-module-dir="${PREFIX}/lib/gio/modules" \
                 || { cat config.log; exit 1; }
 
 make
