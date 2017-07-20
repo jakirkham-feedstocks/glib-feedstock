@@ -21,7 +21,7 @@ elif [ "$(uname)" == "Linux" ] ; then
   export LDFLAGS="${LDFLAGS} -L${PREFIX}/lib"
 fi
 
-./configure --prefix=${PREFIX} \
+./configure --prefix="${PREFIX}" \
             --with-python="${PYTHON}" \
             --with-libiconv=gnu \
             --disable-libmount \
